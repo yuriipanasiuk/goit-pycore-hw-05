@@ -10,7 +10,7 @@ def generator_numbers(text: str) -> Generator[float, None, None]:
     """Number generator from text"""
 
     # Regular expression for numbers
-    regex = r"\s(\d+(?:\.\d+)?)\s"
+    regex = r" (\d+(?:\.\d+)?) "
 
     for string_number in re.findall(regex, text):
         try:
