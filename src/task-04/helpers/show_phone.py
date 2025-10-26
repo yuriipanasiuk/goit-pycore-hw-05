@@ -13,7 +13,4 @@ def show_phone(args, contacts):
 
     name = args[0]
 
-    if contacts.get(name):
-        return f"{name}'s phone number is {contacts[name]}"
-
-    return f"Contact {name} not found in contacts list"
+    return f"{name}'s phone number is {contacts[name]}"

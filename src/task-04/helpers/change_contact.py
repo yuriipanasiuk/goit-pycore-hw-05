@@ -13,8 +13,7 @@ def change_contact(args, contacts):
 
     name, phone = args
 
-    if contacts.get(name):
-        contacts[name] = phone
-        return "Contact updated."
+    _ = contacts[name]
+    contacts[name] = phone
 
-    return f"Contact {name} not found in contacts list"
+    return "Contact updated."
